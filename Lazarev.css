@@ -1,1 +1,116 @@
-Hello
+/* no height given for the #main  */
+
+:root {
+    --green-btn-bg-border-color: #00dc16;
+    --green-btn-bg-color-hover: #00900e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+
+nav {
+    position: fixed;
+    /* background-color: rgb(0, 255, 68); */
+    display: flex;
+    align-items: flex-start;
+    height: 13vh;
+    width: 100%;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    background-color: #111;
+    z-index: 10;
+}
+
+nav h1 {
+    font-size: 1.6vw;
+    padding-top: 6px;
+}
+
+.nav-middle {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-middle h4 {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 7px;
+    margin-bottom: 3vw;
+}
+
+.nav-middle h4:hover {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-middle h5 {
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    /* background-color: red; */
+    display: none;
+    overflow: hidden;
+}
+
+.nav-middle h5 span {
+    font-size: 0.77vw;
+    font-weight: 400;
+    transform: translateY(25px);
+    display: inline-block;
+}
+
+nav button {
+    background-color: var(--green-btn-bg-border-color);
+    border: 2px solid var(--green-btn-bg-border-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 0.95vw;
+    font-weight: bolder;
+    text-transform: uppercase;
+    /* border-radius: 5px; */
+}
+
+nav button:hover {
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    border: 2px solid var(--green-btn-bg-color-hover);
+    border-radius: 200px;
+    background: transparent;
+    scale: 1.03;
+    color: #fff;
+}
+
+nav button svg {
+    height: 0.85vw;
+    margin-left: 1.6vw;
+}
+
+#nav-bottom {
+    width: 79%;
+    height: 0vh;
+    position: absolute;
+    /* background-color: red; */
+    top: 100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}
