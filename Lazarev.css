@@ -114,3 +114,146 @@ nav button svg {
     z-index: 9;
     border-bottom: 1px solid #fff;
 }
+
+
+/*-------------------------------------- PAGE-01 CSS --------------------------------------*/
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 h1 svg {
+    height: 5.5vw;
+    width: 5.5vw;
+    background-color: var(--green-btn-bg-border-color);
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    /* Smooth transition */
+    animation: spin 0.9s infinite linear;
+    /* Rotate continuously */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#page1 h1 {
+    /* here we are take size in 'vw' which help in making responsive website  */
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 7.5vw;
+}
+
+#page1 p {
+    text-align: center;
+    font-weight: 400;
+    margin: 3vh;
+    margin-bottom: 4px;
+}
+
+#page1 #page1-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#page1 #page1-button h4:hover {
+    border: 1px solid var(--green-btn-bg-color-hover);
+    cursor: pointer;
+}
+
+#page1 #page1-button h4 {
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-transform: lowercase;
+    border: 1px solid #a5a5a5;
+    margin: 0px 3px;
+    margin-top: 0.5px;
+
+    /* we can give padding & border radius in 'px' it doesn't effect responsiveness  */
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+#page1 #page1-button h4:nth-last-child(2) {
+    border: none;
+    padding: 2px 0px;
+}
+
+
+/*-------------------------------------- MOVING-DIV CSS (PAGE - 01)--------------------------------------*/
+
+#moving-div {
+    background-color: rgb(237, 75, 75);
+    background-color: black;
+    /* border-top: 1px solid #dadada; */
+    /* border-bottom: 1px solid #dadada; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 55%;
+    height: 15vh;
+}
+
+#moving-div .move {
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img {
+    height: 1.5vw;
+    margin: 0 2vw;
+}
+
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#blur-left {
+    height: 100%;
+    width: 22%;
+    background: linear-gradient(to right, black, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#blur-right {
+    height: 100%;
+    width: 22%;
+    background: linear-gradient(to right, transparent, black);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
