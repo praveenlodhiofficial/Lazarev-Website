@@ -257,3 +257,77 @@ nav button svg {
     z-index: 2;
 }
 
+/*-------------------------------------- PAGE-02 CSS --------------------------------------*/
+
+#page2 {
+    height: 110vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding: 0vw 10.5vw;
+    padding-bottom: 0vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+
+#page2-left {
+    height: 100%;
+    width: 40%;
+    /* background-color: #535252; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+
+#page2-left p {
+    font-size: 0.8vw;
+}
+
+#page2-left h5 {
+    width: 70%;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+#page2-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: #535252; */
+}
+
+.right-elem {
+    position: relative;
+    /* background-color: red; */
+    padding-top: 3vw;
+    padding-bottom: 5.4vw;
+    border-bottom: 0.5px solid #333;
+
+}
+
+.right-elem:hover {
+    /* transition: all 0.4s ease-in-out; */
+    border-bottom: 1.5px solid #ffffff;
+    border-top: 1.5px solid #ffffff;
+    /* box-shadow: 0px 0px 6px rgba(13, 163, 78, 0.903); */
+}
+
+.right-elem h2 {
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+.right-elem img {
+    height: 7vw;
+    width: 7vw;
+    opacity: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    scale: 0;
+    /* padding: 1px; */
+    /* border: 1px solid #595959; */
+}

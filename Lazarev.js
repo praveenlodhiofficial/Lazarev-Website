@@ -47,4 +47,40 @@ function navAnimation() {
     });
 }
 
+function page2Animation() {
+    var rightElems = document.querySelectorAll(".right-elem");
+
+    rightElems.forEach(function (elem) {
+        elem.addEventListener("mouseenter", function () {
+            gsap.to(elem.childNodes[3], {
+                opacity: 1,
+                scale: 1,
+                duration: 0.4
+            })
+        });
+        elem.addEventListener("mouseleave", function () {
+            gsap.to(elem.childNodes[3], {
+                opacity: 0,
+                scale: 0,
+                duration: 0.4
+            })
+        });
+
+        // 'MouseEvent' it is basically give the details about our cursor movement
+        // 'dets' is a keyword used for detail
+
+        // console.log(elem.getBoundingClientRect())
+        // 'getBoundingClientRect()' this function give DOM rect value which later help us to maintain the boundary of the cursor free movement for given image
+
+        elem.addEventListener("mousemove", function (dets) {
+            gsap.to(elem.childNodes[3], {
+                ease: "power2.out",
+                x: dets.x - elem.getBoundingClientRect().x - 70,
+                y: dets.y - elem.getBoundingClientRect().y - 120
+            })
+        })
+    });
+}
+
 navAnimation()
+page2Animation()
