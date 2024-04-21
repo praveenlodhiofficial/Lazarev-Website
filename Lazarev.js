@@ -106,4 +106,4 @@ function page3VideoAnimation() {
 
 navAnimation()
 page2Animation()
-page3videoAnimation()
+page3VideoAnimation()

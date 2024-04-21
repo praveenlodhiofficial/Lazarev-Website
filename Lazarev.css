@@ -345,10 +345,19 @@ nav button svg {
     align-items: center;
     justify-content: center;
     padding: 50px;
+    transition: border-radius 1s;
+    /* Smooth transition for border-radius change */
+}
+
+#page3:hover {
+    border-radius: 50px;
+    /* Apply border-radius of 50px on hover */
+    border: 5px solid rgb(237, 237, 237);
+
 }
 
 #page3-center {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -359,12 +368,13 @@ nav button svg {
     align-items: center;
     justify-content: center;
     padding: 3vw;
-    /* background-color: black; */
+    border-radius: 50%;
+    background-color: black;
 }
 
 #page3-center .icon i {
     color: rgb(255, 255, 255);
-    font-size: 2vw;
+    font-size: 2.8vw;
     border-radius: 50%;
     background-color: transparent;
 }
@@ -372,8 +382,8 @@ nav button svg {
 #page3-center .icon:hover,
 #page3-center .icon i:hover,
 #page3-center .icon:hover i {
-    /* background-color: var(--green-btn-bg-border-color); */
-    scale: 1.5;
+    background-color: var(--green-btn-bg-border-color);
+    /* scale: 1.15; */
     transition: all 0.5s ease-in-out;
     color: black;
     cursor: pointer;
@@ -383,8 +393,9 @@ nav button svg {
     font-size: 1vw;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+    border-radius: 58px;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 12px 26px;
     margin-top: 0.8vw;
     font-weight: 700;
     opacity: 0;
@@ -408,7 +419,76 @@ nav button svg {
     width: 100%;
     position: absolute;
     object-fit: cover;
-    transform: scale(0.4) scaleY(0);
+    transform: scale(0.7) scaleY(0);
     opacity: 0;
     border-radius: 30px;
+}
+
+/*-------------------------------------- PAGE-04 CSS --------------------------------------*/
+
+#page4 {
+    min-height: 80vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.944);
+    position: relative;
+    padding: 0vw 6vw;
+    padding-bottom: 0vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page4-left {
+    height: 100%;
+    width: 45%;
+    /* background-color: #c50f0f; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 7.5vw 0;
+}
+
+#page4-left h1 {
+    width: 85%;
+    font-size: 3vw;
+    color: black;
+    text-transform: uppercase;
+    /* font-family: neue-haas-grotesk-display, sans-serif; */
+
+}
+
+#page4-right {
+    height: 80%;
+    width: 50%;
+    /* background-color: #535252; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page4-right-elem {
+    position: relative;
+    padding-top: 4vw;
+    height: 50%;
+}
+
+.page4-right-elem:nth-child(2) {
+    height: 40%;
+}
+
+.page4-right-elem h4 {
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #000000;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.page4-right-elem p {
+    font-size: 1.2vw;
+    margin-top: 30px;
+    color: black;
+    font-family: neue-haas-grotesk-display, sans-serif;
 }
