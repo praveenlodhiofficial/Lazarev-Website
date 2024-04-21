@@ -331,3 +331,84 @@ nav button svg {
     /* padding: 1px; */
     /* border: 1px solid #595959; */
 }
+
+/*-------------------------------------- PAGE-03 CSS --------------------------------------*/
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    background-image: url(https://assets-global.website-files.com/64a2ab71942e1d57feb6fe39/65f306410543a22950d85603_reel-cover.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#page3-center {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page3-center .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    /* background-color: black; */
+}
+
+#page3-center .icon i {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#page3-center .icon:hover,
+#page3-center .icon i:hover,
+#page3-center .icon:hover i {
+    /* background-color: var(--green-btn-bg-border-color); */
+    scale: 1.5;
+    transition: all 0.5s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+
+#page3-center h5 {
+    font-size: 1vw;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 0.8vw;
+    font-weight: 700;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+    transform: translateY(10%);
+    border: 2px solid var(--green-btn-bg-color-hover);
+}
+
+#page3-center:hover h5 {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 0.5s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+
+
+#page3 video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scale(0.4) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+}
