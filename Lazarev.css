@@ -427,9 +427,9 @@ nav button svg {
 /*-------------------------------------- PAGE-04 CSS --------------------------------------*/
 
 #page4 {
-    min-height: 80vh;
+    min-height: 90vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.944);
+    background-color: rgb(255, 255, 255);
     position: relative;
     padding: 0vw 6vw;
     padding-bottom: 0vw;
@@ -451,15 +451,15 @@ nav button svg {
 
 #page4-left h1 {
     width: 85%;
-    font-size: 3vw;
+    font-weight: 750;
+    font-size: 3.5vw;
     color: black;
-    text-transform: uppercase;
     /* font-family: neue-haas-grotesk-display, sans-serif; */
 
 }
 
 #page4-right {
-    height: 80%;
+    height: 100%;
     width: 50%;
     /* background-color: #535252; */
     display: flex;
@@ -469,26 +469,93 @@ nav button svg {
 
 .page4-right-elem {
     position: relative;
+    /* background-color: red; */
     padding-top: 4vw;
-    height: 50%;
+    /* border-bottom: 0.5px solid #333; */
+    height: 54%;
 }
 
 .page4-right-elem:nth-child(2) {
-    height: 40%;
+    height: 45%;
 }
 
 .page4-right-elem h4 {
-    font-size: 1.3vw;
-    font-weight: 700;
+    font-size: 1.1vw;
+    font-weight: 400;
     text-transform: uppercase;
-    text-decoration: underline;
-    color: #000000;
+    color: #a3a3a3;
     font-family: neue-haas-grotesk-display, sans-serif;
 }
 
 .page4-right-elem p {
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     margin-top: 30px;
     color: black;
     font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+/*-------------------------------------- PAGE-05 CSS --------------------------------------*/
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 0vh 12.5vh;
+    padding-bottom: 8vh;
+}
+
+.section {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8vh 7vw;
+    padding-bottom: 0;
+}
+
+.sec-left {
+    height: 100%;
+    width: 25%;
+    padding-top: 3vh;
+}
+
+.sec-left h2 {
+    font-size: 2vw;
+    font-weight: 800;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.sec-left p {
+    color: #000;
+    font-size: 1.2vw;
+    width: 80%;
+}
+.sec-right {
+    height: 100%;
+    width: 70%;
+    background-color: rgb(237, 193, 127);
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sec-right img {
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+}
+
+.sec-right video {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    cursor: pointer;
 }
