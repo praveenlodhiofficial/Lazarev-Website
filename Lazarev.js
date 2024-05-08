@@ -127,3 +127,4 @@ function page5VideoAnimation() {
 navAnimation()
 page2Animation()
 page3VideoAnimation()
+page5VideoAnimation()
