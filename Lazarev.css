@@ -745,7 +745,7 @@ summary::marker {
     min-height: 100vh;
     width: 100%;
     /* background-color: #111; */
-    background-color: #000;
+    background-color: #fff;
     padding: 10vh 10vw;
 }
 
@@ -755,14 +755,14 @@ summary::marker {
     /* background-color: red; */
     padding-left: 23vw;
     padding-right: 5vw;
-    line-height: 5.5vw;
+    line-height: 5.8vw;
     padding-bottom: 10vh;
     border-bottom: 1px solid #dadada;
 }
 
 #page7-content {
     /* background-color: red; */
-    color: #beff4f;
+    color: #000;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -770,7 +770,7 @@ summary::marker {
 }
 
 #page7-content #page7-right {
-    width: 75%;
+    width: 70%;
 }
 
 #page7-content #page7-right p {
@@ -781,11 +781,195 @@ summary::marker {
 }
 
 #blue-btn {
-    background-color: #beff4f;
-    border: 4px solid #4f5bff;
+    background-color: #4f5bff;
+    border: 2px solid #4f5bff;
     width: 15vw;
     height: 3.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+#blue-btn:hover {
+    transition: all 0.85s ease-in-out;
+    cursor: pointer;
+    border: 2px solid #1323fc;
+    border-radius: 200px;
+    background: transparent;
+    /* scale: 0.8; */
+}
+
+#blue-btn h4 {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85vw;
+    /* letter-spacing: 1px; */
+}
+
+#blue-btn:hover h4,
+#blue-btn:hover h4 i {
+    transition: all 0.85s ease-in-out;
+    color: #1323fc;
+}
+
+#blue-btn h4 i {
+    font-size: 1.1vw;
+    font-weight: 100;
+    margin-left: 0.5vw;
+}
+
+#page7-bottom {
+    height: 44vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 1px solid #dadada;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* background-color: rgb(48, 48, 48); */
+}
+
+#page7-bottom-part1 {
+    border-right: 1px solid #dadada;
+    width: 30%;
+    /* background-color: red; */
+    height: 100%;
+}
+
+#page7-bottom-part2 {
+    border-right: 1px solid #dadada;
+    width: 26%;
+    /* background-color: red; */
+    height: 100%;
+}
+
+#page7-bottom-part3 {
+    border-right: 1px solid #dadada;
+    width: 20%;
+    /* background-color: red; */
+    height: 100%;
+}
+
+#page7-bottom-part4 {
+    border-right: 1px solid #dadada;
+    width: 20%;
+    /* background-color: red; */
+    height: 100%;
+}
+
+#page7-bottom-part5 {
+
+    width: 6%;
+    /* background-color: red; */
+    height: 100%;
+}
+
+.page7-bottom-parts {
+    padding: 3vh 0.6vw;
+}
+
+.page7-bottom-parts h5 {
+    color: #000;
+    font-weight: 500;
+    font-size: 0.9vw;
+    margin-bottom: 4vh;
+}
+
+.page7-bottom-parts h4 {
+    background-color: #111;
+    width: 75%;
+    padding: 4px 4px;
+    margin-bottom: 0.3vh;
+    border-radius: 50px;
+    font-size: 0.85vw;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.page7-bottom-parts h4 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7vw;
+    height: 1.7vw;
+    background-color: #333;
+    border: 1px solid white;
+    padding: 0.5vw 0.75vw;
+    border-radius: 50%;
+    margin-right: 0.6vw;
+}
+
+#page7-bottom-part2 h4:nth-child(2) {
+    transform: translateX(0);
+}
+
+#page7-bottom-part2 h4:nth-child(3) {
+    transform: translateX(12%);
+}
+
+#page7-bottom-part2 h4:nth-child(4) {
+    transform: translateX(24%);
+}
+
+#page7-bottom-part2 h4:nth-child(5) {
+    transform: translateX(36%);
+}
+
+#page7-bottom-part2 h4:nth-child(6) {
+    transform: translateX(48%);
+}
+
+#page7-bottom-part2 h4:nth-child(7) {
+    transform: translateX(60%);
+}
+
+#page7-bottom-part3 h4:nth-child(2) {
+    transform: translateX(0);
+}
+
+#page7-bottom-part3 h4:nth-child(3) {
+    transform: translateX(12%);
+}
+
+#page7-bottom-part3 h4:nth-child(4) {
+    transform: translateX(24%);
+}
+
+#page7-bottom-part3 h4:nth-child(5) {
+    transform: translateX(36%);
+}
+
+#page7-bottom-part3 h4:nth-child(6) {
+    transform: translateX(48%);
+}
+
+#page7-bottom-part3 h4:nth-child(7) {
+    transform: translateX(60%);
+}
+
+#page7-bottom-part3 h4:nth-child(8) {
+    transform: translateX(72%);
+}
+
+#page7-bottom-part4 h4:nth-child(2) {
+    transform: translateX(0);
+}
+
+#page7-bottom-part4 h4:nth-child(3) {
+    transform: translateX(12%);
+}
+
+#page7-bottom-part4 h4:nth-child(4) {
+    transform: translateX(24%);
+}
+
+/*-------------------------------------- RANDOM PAGE-08 CSS --------------------------------------*/
+
+#random-page8 {
+    height: 100vh;
+    background-color: white;
 }

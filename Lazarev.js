@@ -1,3 +1,29 @@
+function tiltEffect() {
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Initialize VanillaTilt for all nav elements
+        VanillaTilt.init(document.querySelectorAll("nav"), {
+            max: 10,
+            speed: 2000,
+            scale: 1.10,
+            axis: "x",
+            duration: 0.3,
+            glare: true,
+            'max-glare': 0.4
+        });
+
+        // Initialize VanillaTilt for an element with ID "page3"
+        VanillaTilt.init(document.querySelectorAll("#page3"), {
+            max: 35,
+            speed: 3000,
+            scale: 0.6,
+            glare: true,
+            axis: "x",
+            'max-glare': 0.5
+        });
+    });
+}
+
 function navAnimation() {
     var nav = document.querySelector("nav");
     var navMiddleElements = document.querySelectorAll(".nav-middle-element");
@@ -124,7 +150,48 @@ function page5VideoAnimation() {
 
 }
 
+function page7Animations() {
+    gsap.from("#page7-bottom-part2 h4", {
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#page7-bottom-part2",
+            scroller: "body",
+            // markers:true,
+            start: "top 60%",
+            end: "top 15%",
+            scrub: true
+        }
+    })
+    gsap.from("#page7-bottom-part3 h4", {
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#page7-bottom-part2",
+            scroller: "body",
+            // markers:true,
+            start: "top 70%",
+            end: "top 5%",
+            scrub: true
+        }
+    })
+    gsap.from("#page7-bottom-part4 h4", {
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#page7-bottom-part2",
+            scroller: "body",
+            // markers:true,
+            start: "top 70%",
+            end: "top 5%",
+            scrub: true
+        }
+    })
+}
+
+tiltEffect()
 navAnimation()
 page2Animation()
 page3VideoAnimation()
 page5VideoAnimation()
+page7Animations()
